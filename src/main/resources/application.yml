@@ -51,10 +51,10 @@ spring:
           uri: http://ManagementCenter:8080
           predicates:
             - Path=/managementCenters/** 
-        - id: Installation
-          uri: http://Installation:8080
+        - id: admin15installation
+          uri: http://admin15installation:8080
           predicates:
-            - Path=/installations/** 
+            - Path=/admin15installations/** 
         - id: orderstatus
           uri: http://orderstatus:8080
           predicates:
