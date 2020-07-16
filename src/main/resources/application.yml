@@ -43,22 +43,22 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: admin15order
+        - id: Order
           uri: http://Order:8080
           predicates:
-            - Path=/admin15orders/** 
+            - Path=/orders/** 
         - id: ManagementCenter
           uri: http://ManagementCenter:8080
           predicates:
-            - Path=/admin15managementcenters/** 
-        - id: admin15installation
-          uri: http://admin15installatio:8080
+            - Path=/managementCenters/** 
+        - id: Installation
+          uri: http://Installation:8080
           predicates:
-            - Path=/admin15installations/** 
+            - Path=/installations/** 
         - id: orderstatus
           uri: http://orderstatus:8080
           predicates:
-            - Path=/admin15orderstatuses/** 
+            - Path=/orderStatuses/** 
       globalcors:
         corsConfigurations:
           '[/**]':
