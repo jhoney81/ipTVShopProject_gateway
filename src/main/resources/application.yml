@@ -46,19 +46,19 @@ spring:
         - id: Order
           uri: http://Order:8080
           predicates:
-            - Path=/orders/** 
+            - Path=/admin15orders/** 
         - id: ManagementCenter
           uri: http://ManagementCenter:8080
           predicates:
-            - Path=/managementCenters/** 
+            - Path=/admin15managementcenters/** 
         - id: Installation
           uri: http://Installation:8080
           predicates:
-            - Path=/installations/** 
+            - Path=/admin15installations/** 
         - id: orderstatus
           uri: http://orderstatus:8080
           predicates:
-            - Path=/orderStatuses/** 
+            - Path=/admin15orderstatuses/** 
       globalcors:
         corsConfigurations:
           '[/**]':
